@@ -1,0 +1,33 @@
+#headerActionWrapper > * {
+    margin: 12px 0;
+}
+
+#headerActionWrapper h2 {
+    font-size: 2.4rem;
+    line-height: 1.2;
+}
+
+#headerActionWrapper .textline {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/**
+mobile: up to 768px
+tablet: from 769px
+desktop: from 1024px
+widescreen: from 1216px
+fullhd: from 1408px
+**/
+@media screen and (min-width: 769px) {
+    #headerActionWrapper input[type="text"] {
+        width: 400px;
+    }
+
+    #headerActionWrapper input[type="text"],
+    #headerActionWrapper .btn.contained {
+        height: 64px;
+        height: 64px;
+        font-size: 1.2rem;
+    }
+}

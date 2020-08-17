@@ -1,0 +1,27 @@
+body {
+    font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,Segoe UI,Hiragino Kaku Gothic ProN,Hiragino Sans,ヒラギノ角ゴ ProN W3,Arial,メイリオ,Meiryo,sans-serif;
+}
+
+nav.navbar {
+    background-color: #1de9b6;
+}
+
+.navbar-brand img {
+    border: solid 1px #fff;
+    border-radius: 4px;
+}
+
+.header {
+    background-color: #6a11cb;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+}
+
+.products .card {
+    max-width: 600px;
+}
+
+footer {
+    min-height: 200px;
+    background-color: #212121;
+    background: linear-gradient(to right, #243949, #517fa4);
+}
