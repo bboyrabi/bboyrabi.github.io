@@ -2,6 +2,12 @@
 
 RAKUMAオンラインスクールは、オンラインでプログラミングやコードの書き方を指導し、個人でプロダクトの開発が可能なレベルに達するまで育成することを目標としています。
 
+## プロダクト一覧
+
+[GitHubページ](https://bboyrabi.github.io/projects/goal-books/index.html)
+
+- [本の検索Webアプリ](https://bboyrabi.github.io/)
+
 ## プロダクト開発のために必要なもの
 
 このプロダクトというのはWebサービスやアプリなど一つの成果物のことを指します。
