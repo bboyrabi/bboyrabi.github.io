@@ -4,9 +4,9 @@ RAKUMAオンラインスクールは、オンラインでプログラミング�
 
 ## プロダクト一覧
 
-[GitHubページ](https://bboyrabi.github.io/projects/goal-books/index.html)
+[GitHubページ](https://bboyrabi.github.io/)
 
-- [本の検索Webアプリ](https://bboyrabi.github.io/)
+- [本の検索Webアプリ](https://bboyrabi.github.io/projects/goal-books/index.html)
 
 ## プロダクト開発のために必要なもの
 
@@ -14,7 +14,7 @@ RAKUMAオンラインスクールは、オンラインでプログラミング�
 
 開発には多くの知識や概念、使い方を理解する必要があります。
 とても大変で時間が掛かり、心が折れることもあると思います。
-しかし、就職や転職、サービス開発の際にあればきっと役に立つものとなりますので、前向きに継続してください。
+しかし、就職や転職、サービス開発にはきっと役に立つものとなりますので、前向きに継続してください。
 
 以下に必要なものを掲載しています。
 スクールの課題を通して少しずつ理解していけるようなカリキュラムを制作していく予定です。
@@ -53,7 +53,7 @@ RAKUMAオンラインスクールは、オンラインでプログラミング�
             - Web API（Ajax、Fetch API）
             - バージョン（ES6以上、モジュール機能）
     - パッケージ
-    - npm
+        - npm
 
     - ビルドタスク
         - npm scripts
