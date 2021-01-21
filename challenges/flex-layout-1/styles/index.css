@@ -1,0 +1,68 @@
+.challenge-container {
+    padding: 1rem;
+}
+
+.questions-wrapper {
+    padding: 1rem 0;
+    border-top: solid 1px #bdbdbd;
+}
+
+.questions-wrapper h2 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+/* Questions */
+:root {
+    --flag-border: solid 1px #424242;
+    --flag-width: 300px;
+    --flag-height: calc(var(--flag-width) * 2 / 3);
+    --jf-sun-size: calc(var(--flag-height) * 3 / 5);
+}
+
+.q1-wrapper,
+.q2-wrapper,
+.q3-wrapper {
+    width: var(--flag-width);
+    height: var(--flag-height);
+    border: var(--flag-border);
+}
+
+.q1-wrapper div {
+    background-color: #ff1744;
+    width: var(--jf-sun-size);
+    height: var(--jf-sun-size);
+    border-radius: 50%;
+}
+
+.q2-wrapper div {
+    flex-basis: 33.3333%;
+}
+
+.q2-wrapper div {
+    background-color: #fff;
+}
+
+.q2-wrapper div:first-child {
+    background-color: #1d2187;
+}
+
+.q2-wrapper div:last-child {
+    background-color: #e70014;
+}
+
+.q3-wrapper div {
+    flex-basis: 33.3333%;
+}
+
+.q3-wrapper div {
+    background-color: #fff;
+}
+
+.q3-wrapper div:first-child {
+    background-color: #e60115;
+}
+
+.q3-wrapper div:last-child {
+    background-color: #0280cc;
+}

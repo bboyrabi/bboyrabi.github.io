@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox(フレックスボックス)その１</title>
+    <link rel="stylesheet" href="./styles/common.css">
+    <link rel="stylesheet" href="./styles/index.css">
+</head>
+
+<body>
+    <header class="flex flex-equal-justified flex-center page-header">
+        <a href="https://rabico.dev/">RAKUMAオンラインスクール</a>
+    </header>
+
+    <section class="challenge-container">
+        <h1>Flexboxを使用して図形を作成してみよう！</h1>
+        <p>Flexboxについては<a href="https://rabico.dev/flexbox-demo/" target="_blank">こちら</a>で学習してください。</p>
+        <div class="questions-wrapper">
+            <h2>日本の国旗</h2>
+            <p>国旗の横幅は<code>300px</code>で、縦幅は横幅の３分の２です。<br>
+                日の丸は国旗の中央にあり、縦横の幅は国旗の高さの５分の３です。<br>
+                境界線の太さは<code>1px</code>で色はカラーコード<code>#424242</code>です。
+            </p>
+            <div class="flex flex-center flex-center-justified q1-wrapper">
+                <div></div>
+            </div>
+        </div>
+        <div class="questions-wrapper">
+            <h2>フランスの国旗</h2>
+            <p>国旗の横幅は<code>300px</code>で、縦幅は横幅の３分の２です。<br>
+                縦模様の横幅はそれぞれ３分の１ずつです。<br>
+                カラーコードは左から<code>#1d2187</code>、<code>#fff</code>、<code>#e70014</code>です。
+                境界線の太さは<code>1px</code>で色はカラーコード<code>#424242</code>です。
+            </p>
+            <div class="flex q2-wrapper">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <div class="questions-wrapper">
+            <h2>オランダの国旗</h2>
+            <p>国旗の横幅は<code>300px</code>で、縦幅は横幅の３分の２です。<br>
+                横模様の縦幅はそれぞれ３分の１ずつです。<br>
+                カラーコードは上から<code>#e60115</code>、<code>#fff</code>、<code>#0280cc</code>です。<br>
+                境界線の太さは<code>1px</code>で色はカラーコード<code>#424242</code>です。
+            </p>
+            <div class="flex flex-vertical q3-wrapper">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
