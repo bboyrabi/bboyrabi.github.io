@@ -16,6 +16,7 @@ code {
     background-color: #303f9f;
     padding: 0 1rem;
     font-weight: 700;
+    box-sizing: border-box;
 }
 
 .page-header a {
