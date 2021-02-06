@@ -6,9 +6,9 @@
  * その日のお小遣い。例「今日のお小遣い: 40円」
  * その日に預かったお金では買えないケース。例「最低でも360円必要で、60円足りません。」
  * 
- * @param {*} fund 本日母から渡された資金
- * @param {*} appleFee 本日のりんごの値段
- * @param {*} orangeFee 本日のみかんの値段
+ * @param {number} fund 本日母から渡された資金
+ * @param {number} appleFee 本日のりんごの値段
+ * @param {number} orangeFee 本日のみかんの値段
  */
 function calcMyMoney(fund, appleFee, orangeFee) {
     console.log(`本日の資金:${fund}円、本日のりんご:${appleFee}円、本日のみかん:${orangeFee}円`);
