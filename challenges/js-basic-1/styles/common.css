@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+code {
+    background-color: #fff9c4;
+    font-size: 1.2rem;
+    padding: 0 4px;
+    border-radius: 4px;
+}
+
+.page-header {
+    height: 60px;
+    width: 100%;
+    background-color: #2979ff;
+    padding: 0 1rem;
+    font-weight: 700;
+    box-sizing: border-box;
+}
+
+.page-header a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.flex {
+    display: -ms-flexbox; /* IE */
+    display: flex;
+}
+
+.flex-vertical {
+    -ms-flex-direction: column; /* IE */
+    flex-direction: column;
+}
+
+.flex-equal-justified {
+    -ms-flex-pack: justify; /* IE */
+    justify-content: space-between;
+}
+
+.flex-center {
+    -ms-flex-align: center; /* IE */
+    align-items: center;
+}
+
+.flex-center-justified {
+    -ms-flex-pack: center; /* IE */
+    justify-content: center;
+}
