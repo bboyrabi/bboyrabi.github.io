@@ -58,4 +58,5 @@ pre {
     background-color: black;
     color: #fff;
     font-size: 1.4em;
+    overflow-x: scroll;
 }
