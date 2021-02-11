@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>配列とオブジェクト</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header class="flex flex-equal-justified flex-center page-header">
+        <a href="https://rabico.dev/">RAKUMAオンラインスクール</a>
+    </header>
+    <main class="lesson-container">
+        <h1>配列とオブジェクト、関数</h1>
+        <h2>配列</h2>
+        <p>配列が使用される場面の一例です。</p>
+        <ul>
+            <li>複数の検索結果 =&gt; googleの検索結果</li>
+            <li>結果の集計</li>
+            <li>文字列</li>
+        </ul>
+        <p>
+            基本的に配列には決まった変数型の値が格納されます。<br>
+            プログラミング言語によっては予め定義された変数型以外のものを代入しようとするとエラーとなるものもあります。<br>
+            JavaScriptではエラーとなることはありませんが、代入する変数型については意識するべきです。
+        </p>
+        <h3>配列の変数型について</h3>
+        <p>
+            ⭕次の配列は文字列型の配列です。
+            <pre><code>['メロンパン', 'あんぱん', 'フランスパン', 'カレーパン'];</code></pre>
+            ⭕次の配列は数値型の配列です。
+            <pre><code>[43, 22, 103, 87];</code></pre>
+            ❌次の配列のように複数の変数型を設定することは極力避けましょう。<br>
+            <pre><code>['4', 3, 'あいう', {}];</code></pre>
+            このような場合はオブジェクトを使用しましょう。
+        </p>
+
+        <h3>デモ</h3>
+        <table>
+            <tr>
+                <th>出席番号</th>
+                <th>氏名</th>
+                <th>国語</th>
+                <th>数学</th>
+                <th>英語</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>明智光秀</td>
+                <td>74</td>
+                <td>71</td>
+                <td>70</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>織田信長</td>
+                <td>78</td>
+                <td>86</td>
+                <td>67</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>豊臣秀吉</td>
+                <td>87</td>
+                <td>65</td>
+                <td>56</td>
+            </tr>
+        </table>
+
+        <h4>クラスの生徒の氏名を出力したい</h4>
+        <p>
+            こんな配列を用意します。
+            <pre><code>['明智光秀', '織田信長', '豊臣秀吉'];</code></pre>
+            順次に表示するので、繰り返し処理(<code>for</code>文)を使用します。
+        </p>
+        <h4>数学の点数を降順（高い点数が上）に並べ替えたい</h4>
+        <p>
+            こんな配列を用意します。
+            <pre><code>[71, 86, 65];</code></pre>
+            ソートの仕方には古来より複数の方法があります。今回は<a href="https://ja.wikipedia.org/wiki/%E3%83%90%E3%83%96%E3%83%AB%E3%82%BD%E3%83%BC%E3%83%88" target="_blank">バブルソート</a>を試してみましょう。
+        </p>
+
+        <h2>オブジェクト</h2>
+        <p>
+            配列は同じ変数型の値を複数格納するものでしたが、オブジェクトは複数の変数型の値を格納する場合に向いています。
+        </p>
+        <table>
+            <tr>
+                <th>出席番号</th>
+                <th>氏名</th>
+                <th>国語</th>
+                <th>数学</th>
+                <th>英語</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>明智光秀</td>
+                <td>74</td>
+                <td>71</td>
+                <td>70</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>織田信長</td>
+                <td>78</td>
+                <td>86</td>
+                <td>67</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>豊臣秀吉</td>
+                <td>87</td>
+                <td>65</td>
+                <td>56</td>
+            </tr>
+        </table>
+        <p>
+            例えば、クラスの生徒情報を配列にした場合は、次のような感じです。
+            <pre><code>[生徒情報, 生徒情報, 生徒情報];</code></pre>
+            この生徒情報には「出席番号」「氏名」「各科目の点数」を含めるのでオブジェクトを使用します。
+            <pre><code>{
+    no: 1,
+    name: '明智光秀',
+    jaPoint: 74,
+    mathPoint: 71,
+    enPoint: 70
+}</code></pre>
+            この様なオブジェクトを配列にそれぞれ格納します。
+            <pre><code>[
+    {
+        no: 1,
+        name: '明智光秀',
+        jaPoint: 74,
+        mathPoint: 71,
+        enPoint: 70
+    },
+    {
+        no: 2,
+        name: '織田信長',
+        jaPoint: 78,
+        mathPoint: 86,
+        enPoint: 67
+    },
+    {
+        no: 3,
+        name: '豊臣秀吉',
+        jaPoint: 87,
+        mathPoint: 65,
+        enPoint: 56
+    }
+];
+</code></pre>
+        </p>
+
+        <h3>デモ</h3>
+        <p>一学期の中間テストにおける順位と平均点を計算したい。</p>
+        <table>
+            <tr>
+                <th>出席番号</th>
+                <th>氏名</th>
+                <th>国語</th>
+                <th>数学</th>
+                <th>英語</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>明智光秀</td>
+                <td>74</td>
+                <td>71</td>
+                <td>70</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>織田信長</td>
+                <td>78</td>
+                <td>86</td>
+                <td>67</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>豊臣秀吉</td>
+                <td>87</td>
+                <td>65</td>
+                <td>56</td>
+            </tr>
+        </table>
+        <p>
+            必要なものは、生徒個人の各教科の合計点と全体の生徒数です。
+        </p>
+        <ol>
+            <li>
+                【ループ処理】
+                <ul>
+                    <li>それぞれ生徒の各教科の合計点を計算する</li>
+                    <li>生徒オブジェクトに合計点を格納する</li>
+                    <li>全生徒の各教科の合計点の総和を変数に保存する</li>
+                </ul>
+            </li>
+            <li>総和 / 生徒数で平均点を出力する。<br><code>Math.round(値)</code>を使用すれば四捨五入された結果を得られる。</li>
+            <li>【ループ処理】
+                <ul>
+                    <li>総合得点の降順に並べ替える</li>
+                </ul>
+            </li>
+            <li>【ループ処理】
+                <ul>
+                    <li>一位から順に「氏名」と「合計点数」を出力する</li>
+                </ul>
+            </li>
+        </ol>
+
+        <p>
+            さらに「国語」と「数学」、「英語」それぞれの合計点とそれぞれの順位が必要になればどうでしょうか？<br>
+            「また、同じ様なコードを書くのか」とか、「コードをコピペすればいい」とか思うかもしれませんが、関数を定義することによって解決します。
+        </p>
+
+        <h2>関数</h2>
+        <p>ここでは、次の関数を定義します。</p>
+        <ul>
+            <li>あるオブジェクトのメンバーの「平均点」を算出して返却する関数</li>
+            <li>あるオブジェクトのメンバーの点数を元に降順に並べ替える関数</li>
+            <li>「順位」「氏名」「点数」を配列の順で出力する関数</li>
+        </ul>
+        <h3>デモ</h3>
+        <p>
+            実際に関数を使用して「国語」と「数学」「英語」それぞれの平均点を出力してみましょう。<br>
+            また、それぞれの「順位」を１位から順に出力してみましょう。
+        </p>
+        <table>
+            <tr>
+                <th>出席番号</th>
+                <th>氏名</th>
+                <th>国語</th>
+                <th>数学</th>
+                <th>英語</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>明智光秀</td>
+                <td>74</td>
+                <td>71</td>
+                <td>70</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>織田信長</td>
+                <td>78</td>
+                <td>86</td>
+                <td>67</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>豊臣秀吉</td>
+                <td>87</td>
+                <td>65</td>
+                <td>56</td>
+            </tr>
+        </table>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

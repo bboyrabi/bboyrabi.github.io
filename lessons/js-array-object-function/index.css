@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.page-header {
+    height: 60px;
+    width: 100%;
+    background-color: #303f9f;
+    padding: 0 1rem;
+    font-weight: 700;
+    box-sizing: border-box;
+}
+
+.page-header a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.lesson-container {
+    padding: 1rem;
+}
+
+.flex {
+    display: -ms-flexbox; /* IE */
+    display: flex;
+}
+
+.flex-equal-justified {
+    -ms-flex-pack: justify; /* IE */
+    justify-content: space-between;
+}
+
+.flex-center {
+    -ms-flex-align: center; /* IE */
+    align-items: center;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table th {
+    background-color: bisque;
+}
+
+table tr * {
+    border: 1px solid #424242;
+    padding: 4px 8px;
+    text-align: center;
+}
+
+pre {
+    padding: 1em;
+    background-color: black;
+    color: #fff;
+    font-size: 1.4em;
+}
