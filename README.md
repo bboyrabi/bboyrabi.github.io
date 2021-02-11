@@ -50,8 +50,8 @@ RAKUMAオンラインスクールは、オンラインでプログラミング�
             - レスポンシブデザイン（メディアクエリ）
         - JavaScript
             - 基礎構文、書き方
-                - [配列、オブジェクト、関数](https://bboyrabi.github.io/lessons/js-array-object-function/index.html)  
-                [ソースコード](https://github.com/bboyrabi/bboyrabi.github.io/tree/master/)
+                - [配列、オブジェクト、関数](https://bboyrabi.github.io/lessons/js-array-object-function)  
+                [ソースコード](https://github.com/bboyrabi/bboyrabi.github.io/tree/master/lessons/js-array-object-function)
             - スコープ
             - DOM（Document Object Model）
             - イベント処理（バブリング）、DOM操作
