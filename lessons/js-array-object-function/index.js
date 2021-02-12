@@ -21,19 +21,20 @@ const studentNames = ['明智光秀', '織田信長', '豊臣秀吉'];
 // studentNames.forEach(name => console.log(name));
 
 // ------------------------------------------------------------------------
-// バブルソート
+// 選択ソート
 // ------------------------------------------------------------------------
-const mathPoints = [71, 86, 65];
+// const mathPoints = [71, 86, 65];
 // for (let i = 0; i < mathPoints.length; i++) {
+//     let maxIndex = i;
 //     for (let j = i + 1; j < mathPoints.length; j++) {
-//         if(mathPoints[i] < mathPoints[j]) {
-//             let tmp = mathPoints[j];
-//             mathPoints[j] = mathPoints[i];
-//             mathPoints[i] = tmp;
+//         if(mathPoints[maxIndex] < mathPoints[j]) {
+//             maxIndex = j;
 //         }
 //     }
+//     let tmp = mathPoints[maxIndex];
+//     mathPoints[maxIndex] = mathPoints[i];
+//     mathPoints[i] = tmp;
 // }
-
 // mathPoints.forEach(r => console.log(r));
 
 // ------------------------------------------------------------------------
@@ -83,13 +84,15 @@ let total = 0;
 // 総合の得点順位を降順に並べ替えます。
 // ------------------------------------------------------------------------
 // for (let i = 0; i < students.length; i++) {
+//     let maxIndex = i;
 //     for (let j = i + 1; j < students.length; j++) {
-//         if (students[i].sum < students[j].sum) {
-//             let tmp = students[j].sum;
-//             students[j].sum = students[i].sum;
-//             students[i].sum = tmp;
+//         if(students[maxIndex].sum < students[j].sum) {
+//             maxIndex = j;
 //         }
 //     }
+//     let tmp = students[maxIndex];
+//     students[maxIndex] = students[i];
+//     students[i] = tmp;
 // }
 
 // ------------------------------------------------------------------------
@@ -132,13 +135,15 @@ let total = 0;
  */
 // function orderDesc(array = [], member = '') {
 //     for (let i = 0; i < array.length; i++) {
+//         let maxIndex = i;
 //         for (let j = i + 1; j < array.length; j++) {
-//             if (array[i][member] < array[j][member]) {
-//                 let tmp = array[j][member];
-//                 array[j][member] = array[i][member];
-//                 array[i][member] = tmp;
+//             if(array[maxIndex][member] < array[j][member]) {
+//                 maxIndex = j;
 //             }
 //         }
+//         let tmp = array[maxIndex];
+//         array[maxIndex] = array[i];
+//         array[i] = tmp;
 //     }
 // }
 
