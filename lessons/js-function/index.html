@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSの関数</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header class="flex flex-equal-justified flex-center page-header">
+        <a href="https://rabico.dev/">RAKUMAオンラインスクール</a>
+    </header>
+    <main class="lesson-container">
+        <h1>JavaScriptの関数を作成しよう</h1>
+        <p>
+            事前に<a href="https://rabico.dev/js-function/">【JS】オブジェクトと関数、変数スコープ</a>を予習してください。
+        </p>
+        <h2>処理を分ける</h2>
+        <p>
+            関数には最低で一つの処理があります。<br>
+            また、一つの関数に複数の処理を含めてしまうと、汎用性や拡張性、保守性が悪くなるなどのデメリットがあります。<br>
+            例えば、自動販売機でジュースを買うときの機能を考えてみましょう。
+        </p>
+        <img src="images/vending-machine-process.png" alt="自動販売機の処理">
+        <h3>人間側の処理</h3>
+        <ol>
+            <li>お金を自動販売機にいれる</li>
+            <li>ジュースを選ぶ</li>
+            <li>ジュースを取る</li>
+            <li>釣り銭を取る</li>
+        </ol>
+        <h3>自動販売機側の処理</h3>
+        <ol>
+            <li>金額を確認</li>
+            <li>販売可能なジュースのボタンを点灯</li>
+            <li>ジュースを出す</li>
+            <li>釣り銭を出す</li>
+        </ol>
+        <h3>自動販売機のフローチャート</h3>
+        <img style="width: 500px;" src="images/vending-machine-proc-flowchart.png" alt="自動販売機のフローチャート">
+
+        <h3>処理を取り出す</h3>
+        <p>
+            この自動販売機の処理には最低４つの処理があります。（今回「待機」は含めません）
+        </p>
+
+        <h2>処理を関数にする</h2>
+        <p>
+            最初に、現在提供中のジュース情報であるジュース配列を次のように定義しておきます。
+        </p>
+        <pre>
+const juices = [
+    {
+        name: 'コーラ',
+        fee: 120,
+        stock: 2,
+        available: false
+    },
+    {
+        name: 'サイダー',
+        fee: 120,
+        stock: 5,
+        available: false
+    },
+    {
+        name: 'おいしい水',
+        fee: 100,
+        stock: 1,
+        available: false
+    },
+    {
+        name: 'コーヒー',
+        fee: 120,
+        stock: 0,
+        available: false
+    },
+    {
+        name: '大きいコーラ',
+        fee: 150,
+        stock: 2,
+        available: false
+    }
+];</pre>
+        <p>
+            <code>name</code>はジュースの名前、<code>fee</code>は値段、<code>stock</code>は在庫数、<code>available</code>は販売可能かどうかを意味します。
+        </p>
+        <h3>「金額を確認」関数</h3>
+        <p>
+            金額は関数の引数で受け取るようにします。<br>
+            100円を挿れて、10円を挿れてと現実では繰り返しますが、今回はまとめた金額を受け取れると仮定します。
+        </p>
+        <h4>人間側の処理</h4>
+        <p>
+            お金を自動販売機にいれる処理を記述します。
+        </p>
+        <pre>
+const putMoney = 150; // 100円
+console.log(`${putMoney}円が入りました。`);</pre>
+        <h4>自動販売機側の処理</h4>
+        <p>
+            引数の金額・在庫数に応じて<code>jouices</code>配列の<code>available</code>を更新する関数<code>updateJuicesAvailable</code>を作成してください。<br>
+            <code>available</code>は在庫が1つ以上あり、かつ金額が足りている場合に<code>true</code>となります。
+        </p>
+        <pre>
+updateJuicesAvailable(putMoney);</pre>
+        <h3>「販売可能なジュースを点灯」する関数</h3>
+        <h4>人間側の処理</h4>
+        <p>なし</p>
+        <h4>自動販売機側の処理</h4>
+        <p>
+            販売可能なジュースをすべてコンソールに表示する関数<code>viewJuicesAvailable</code>を作成してください。<br>
+            コンソール出力例：⭕ コーラ ¥120
+        </p>
+        <pre>
+viewJuicesAvailable();</pre>
+        <h3>ジュースを選ぶ</h3>
+        <h4>人間側の処理</h4>
+        <p>
+            「おいしい水」を選んだと仮定します。
+        </p>
+        <pre>
+const chooce = 'おいしい水';</pre>
+        <h4>自動販売機側の処理</h4>
+        <p>なし</p>
+        <h3>ジュースを出す</h3>
+        <h4>人間側の処理</h4>
+        <p>なし</p>
+        <h4>自動販売機側の処理</h4>
+        <p>
+            人間が選択したジュース名<code>choose</code>と一致するジュースを外に出す関数<code>putOutJuice</code>を作成してください。<br>
+            外に出す際は在庫数を<code>-1</code>し、出したジュースをコンソールに出力します。<br>
+            コンソール出力例：ガコンガコン（おいしい水を出した）
+        </p>
+        <pre>
+putOutJuice(chooce);</pre>
+        <h3>釣り銭を出す</h3>
+        <h4>人間側の処理</h4>
+        <p>なし</p>
+        <h4>自動販売機側の処理</h4>
+        <p>
+            お釣りを計算し、お釣りがある場合は返金する関数<code>returnChange</code>を作成してください。<br>
+            人間が購入したジュース名、および人間がいれた金額を引数にします。<br>
+            お釣りがある場合はコンーソルに出力してください。<br>
+            コンソール出力例：チャリンチャリン（お釣り¥50を出した）
+        </p>
+        <pre>
+returnChange(chooce, putMoney);</pre>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

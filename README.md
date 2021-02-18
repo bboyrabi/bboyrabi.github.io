@@ -52,7 +52,9 @@ RAKUMAオンラインスクールは、オンラインでプログラミング�
             - 基礎構文、書き方
                 - [配列、オブジェクト、関数](https://bboyrabi.github.io/lessons/js-array-object-function)  
                 [ソースコード](https://github.com/bboyrabi/bboyrabi.github.io/tree/master/lessons/js-array-object-function)
-            - スコープ
+            - 関数・スコープ
+                - [JavaScriptの関数を作成しよう](https://bboyrabi.github.io/lessons/js-function)  
+                [ソースコード](https://github.com/bboyrabi/bboyrabi.github.io/tree/master/lessons/js-function)
             - DOM（Document Object Model）
             - イベント処理（バブリング）、DOM操作
             - Web API（Ajax、Fetch API）
