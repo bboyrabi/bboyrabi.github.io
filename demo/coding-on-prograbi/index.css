@@ -1,0 +1,200 @@
+* {
+    box-sizing: border-box;
+}
+
+.desktop-wrapper {
+    width: 700px;
+    max-width: 100%;
+    /* height: calc(500px / 16 * 9); */
+    border-radius: 16px;
+    background-color: black;
+    border: solid 2px #e0e0e0;
+    padding: 16px 8px;
+}
+
+.desktop-screen {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right top, #6200ea, #ff009d, #ff4258, #ffad38, #f9f871);
+}
+
+/* Mac window header */
+.mac-window-header {
+    width: 100%;
+    height: 8%;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+}
+
+.mac-window-header span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: #ffca28;
+    margin-right: 4px;
+}
+
+.mac-window-header span:first-child {
+    background-color: #f44336;
+}
+
+.mac-window-header span:last-child {
+    background-color: #4caf50;
+}
+
+/* VS Code */
+.vscode-wrapper {
+    position: relative;
+    top: 10%;
+    left: 38%;
+    width: 60%;
+    height: 80%;
+    background-color: #424242;
+    border-radius: 8px;
+    z-index: 2;
+}
+
+.vscode-body {
+    display: flex;
+    height: 84%;
+    font-family: monospace;
+    font-size: 78%;
+    color: #eeeeee;
+}
+
+.vscode-body>div {
+    min-height: 100%;
+    width: 20%;
+    background-color: #303030;
+}
+
+.vscode-body>div:first-child {
+    width: 5%;
+    background-color: #393939;
+}
+
+.vscode-body>div:last-child {
+    width: 75%;
+    background-color: #212121;
+}
+
+.vscode-body .file-list {
+    padding-top: 4px;
+}
+
+.vscode-body .file-list div {
+    padding: 0 4px;
+}
+
+.vscode-body .file-list .selected {
+    background-color: #616161;
+}
+
+.vscode-body .coding-box .coding-box-header {
+    width: 100%;
+    height: 5%;
+    background-color: #303030;
+    display: flex;
+}
+
+.vscode-body .coding-box .coding-box-header>div {
+    width: 20%;
+    height: 100%;
+}
+
+.vscode-body .coding-box .coding-box-header>div.selected {
+    background-color: #212121;
+}
+
+.vscode-body .coding-box .coding-box-body {
+    display: block;
+    padding: 4px;
+}
+
+.vscode-body .coding-box .coding-box-body .nest-1 {
+    padding-left: 10px;
+}
+
+.vscode-body .coding-box .coding-box-body .spacing {
+    width: 100%;
+    margin-top: 4px;
+}
+
+.vscode-footer {
+    width: 100%;
+    height: 8%;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background-color: #1976d2;
+}
+
+/* Coding Color */
+.code-blue {
+    color: #2196f3;
+}
+
+.code-light-blue {
+    color: #03a9f4;
+}
+
+.code-thin-blue {
+    color: #b3e5fc;
+}
+
+.code-yellow {
+    color: #fdd835;
+}
+
+.code-light-yellow {
+    color: #fff59d;
+}
+
+.code-orange {
+    color: #ff9800;
+}
+
+.code-purple {
+    color: #ab47bc;
+}
+
+/* Browser */
+.browse-wrapper {
+    position: absolute;
+    top: 4%;
+    left: 2%;
+    width: 50%;
+    height: 60%;
+    background-color: #e0e0e0;
+    border-radius: 8px;
+    z-index: 1;
+}
+
+.browse-body {
+    width: 100%;
+    height: 92%;
+    padding: 2px 4px;
+    background-color: #fff;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    font-family: monospace;
+}
+
+.desktop-wrapper {
+    display: none;
+}
+
+/* Large-Mobile */
+@media screen and (min-width: 576px) {
+    .desktop-wrapper {
+        display: block;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) {}
+
+/* Desktop */
+@media screen and (min-width: 1025px) {}
