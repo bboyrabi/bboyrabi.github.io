@@ -182,16 +182,8 @@
     font-family: monospace;
 }
 
-.desktop-wrapper {
-    display: none;
-}
-
 /* Large-Mobile */
-@media screen and (min-width: 576px) {
-    .desktop-wrapper {
-        display: block;
-    }
-}
+@media screen and (min-width: 576px) {}
 
 /* Tablet */
 @media screen and (min-width: 768px) {}
