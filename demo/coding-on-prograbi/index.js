@@ -14,7 +14,7 @@ function writeCode() {
     const codeList = [
         '<div><span class="code-blue">function</span> <span class="code-light-yellow">greeting</span><span class="code-yellow">() {</span></div>',
         '<div class="nest-1"><span class="code-purple">return</span> <span class="code-orange">\'PROGRABIにようこそ！\'</span>;</div>',
-        '<div>}</div>',
+        '<div><span class="code-yellow">}</span></div>',
         '<div class="spacing"></div>',
         '<div><span class="code-blue">function</span> <span class="code-light-yellow">havingFun</span><span class="code-yellow">() {</span></div>',
         '<div class="nest-1"><span class="code-blue">const</span> <span class="code-light-blue">text1</span> = <span class="code-orange">\'楽しみながら\'</span>;</div>',
