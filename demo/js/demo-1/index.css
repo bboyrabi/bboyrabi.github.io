@@ -1,0 +1,18 @@
+body {
+    padding: 1.5rem;
+}
+
+span {
+    font-size: 2rem;
+}
+
+.cursor {
+    border-right: .2rem solid;
+    animation: blink 1s steps(1) infinite;
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
