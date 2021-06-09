@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ファイルアップロードボタン発火デモ</title>
+
+    <style>
+        input {
+            display: none !important;
+        }
+
+        img {
+            max-width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>ファイルアップロードボタン発火デモ</h1>
+
+    <form enctype="multipart/form-data" method="POST" role="presentation">
+        <input type="file" id="inputFile" name="photo" accept="image/jpeg, image/png" onchange="handleOnChange(event);">
+    </form>
+
+    <div>
+        <img alt="結果の画像が入ります" id="resultImage">
+    </div>
+
+    <div>
+        <button onclick="handleOnClick(event);">ファイルアップロード</button>
+    </div>
+
+    <script>
+        const handleOnClick = (e) => {
+            const ele = document.getElementById('inputFile');
+            ele.click();
+        }
+
+        const handleOnChange = async (e) => {
+            if (e.target.files && e.target.files.length > 0) {
+                const file = e.target.files[0];
+                let imageDataUrl = await readFile(file);
+                setImgSrc(imageDataUrl);
+            }
+        }
+
+        function setImgSrc(url) {
+            const ele = document.getElementById('resultImage');
+            ele.src = url;
+        }
+
+        function readFile(file) {
+            return new Promise((resolve) => {
+                const reader = new FileReader();
+                reader.addEventListener('load', () => resolve(reader.result), false)
+                reader.readAsDataURL(file)
+            })
+        }
+    </script>
+
+</body>
+
+</html>
